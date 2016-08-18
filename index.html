@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Sammy Israwi | The coding photographer </title>
+  <meta name="description" content="Sample portfolio for programmer and photographer Sammy Israwi.">
+  <meta name="author" content="David Israwi">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon">
+
+</head>
+<body>
+
+  <header class="main_nav green">
+    <div class="container">
+      <div class="twelve columns">
+        <div class="logo">
+          <a href="#">SAMMY ISRAWI</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container main">
+    <div class="row">
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/image1.jpg"><img src="images/image1.jpg"/></a>
+      </div>
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/image2.jpg"><img src="images/image2.jpg"/></a>
+      </div>
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/image3.jpg"><img src="images/image3.jpg"/></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/image4.jpg"><img src="images/image4.jpg"/></a>
+      </div>
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/image5.jpg"><img src="images/image5.jpg"/></a>
+      </div>
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/image6.jpg"><img src="images/image6.jpg"/></a>
+      </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 10%;">
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/image7.jpg"><img src="images/image7.jpg"/></a>
+      </div>
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/image8.jpg"><img src="images/image8.jpg"/></a>
+      </div>
+      <div class="four columns portfolio">
+        <a class="image-link" href="images/image9.jpg"><img src="images/image9.jpg"/></a>
+      </div>
+    </div>
+  </div><!-- Container -->
+
+<div class="row green">
+  <div class="container">
+    <div class="four columns">
+      <img class="avatar" src="images/avatar.jpg"/>
+    </div>
+    <div class="eight columns">
+      <h2 class="bio">About Sammy Israwi</h2>
+      <p class="bio">
+        Sammy is a Computer Science student at the University of Central Florida. In his free time, Sammy likes to play video games, watch movies, and most specially take pictures. His favorite subject is people, but Sammy also has a collection of landscapes, insects, street art and spontaneous shots.
+      </p>
+    </div>
+  </div>
+</div><!-- Row Green -->
+
+<footer>
+  <div class="container">
+    <div class="row twelve columns">
+      <ul class="social">
+        <li class="facebook"><a href="https://www.facebook.com/sammy.israwi"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+        <li class="twitter"><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+        <li class="instagram"><a href="https://www.instagram.com/sammyisra"><i class="fa fa-instagram fa-lg"></i></a></li>
+        <li class="flickr"><a href="https://www.flickr.com/sammy_iy"><i class="fa fa-flickr fa-lg"></i></a></li>
+        <li class="youtube"><a href="#"><i class="fa fa-youtube-square fa-lg"></i></a></li>
+        <li class="linkedin"><a href="https://www.linkedin.com/in/sammyisrawi"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+      </ul>
+    </div>
+    <div class="row twelve columns">
+      <p class="copyright">
+        &copy; 2016 Sammy Israwi Photography. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="scripts/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+// Initialize popup as usual
+$('.image-link').magnificPopup({
+type: 'image',
+mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+zoom: {
+  enabled: true, // By default it's false, so don't forget to enable it
+
+  duration: 300, // duration of the effect, in milliseconds
+  easing: 'ease-in-out', // CSS transition easing function
+
+  // The "opener" function should return the element from which popup will be zoomed in
+  // and to which popup will be scaled down
+  // By defailt it looks for an image tag:
+  opener: function(openerElement) {
+    // openerElement is the element on which popup was initialized, in this case its <a> tag
+    // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+    return openerElement.is('img') ? openerElement : openerElement.find('img');
+  }
+}
+
+});
+</script>
+</body>
+</html>

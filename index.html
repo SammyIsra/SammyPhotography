@@ -83,66 +83,64 @@
     </div>
   </div><!-- Container -->
 
-<div class="row green">
-  <div class="container">
-    <div class="four columns">
-      <img class="avatar" src="images/avatar.jpg"/>
+  <div class="row green">
+    <div class="container">
+      <div class="four columns">
+        <img class="avatar" src="images/avatar.jpg"/>
+      </div>
+      <div class="eight columns">
+        <h2 class="bio">About Sammy Israwi</h2>
+        <p class="bio">
+          Sammy is a Computer Science student at the University of Central Florida. In his free time, Sammy likes to play video games, watch movies, and most specially take pictures. His favorite subject is people, but Sammy also has a collection of landscapes, insects, street art and spontaneous shots.
+        </p>
+      </div>
     </div>
-    <div class="eight columns">
-      <h2 class="bio">About Sammy Israwi</h2>
-      <p class="bio">
-        Sammy is a Computer Science student at the University of Central Florida. In his free time, Sammy likes to play video games, watch movies, and most specially take pictures. His favorite subject is people, but Sammy also has a collection of landscapes, insects, street art and spontaneous shots.
-      </p>
+  </div><!-- Row Green -->
+
+  <footer>
+    <div class="container">
+      <div class="row twelve columns">
+        <ul class="social">
+          <li class="facebook"><a href="https://www.facebook.com/sammy.israwi"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+          <li class="instagram"><a href="https://www.instagram.com/sammyisra"><i class="fa fa-instagram fa-lg"></i></a></li>
+          <li class="flickr"><a href="https://www.flickr.com/sammy_iy"><i class="fa fa-flickr fa-lg"></i></a></li>
+          <li class="linkedin"><a href="https://www.linkedin.com/in/sammyisrawi"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+        </ul>
+      </div>
+      <div class="row twelve columns">
+        <p class="copyright">
+          &copy; 2016 Sammy Israwi Photography. All Rights Reserved.
+        </p>
+      </div>
     </div>
-  </div>
-</div><!-- Row Green -->
+  </footer>
 
-<footer>
-  <div class="container">
-    <div class="row twelve columns">
-      <ul class="social">
-        <li class="facebook"><a href="https://www.facebook.com/sammy.israwi"><i class="fa fa-facebook-square fa-lg"></i></a></li>
-        <li class="twitter"><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
-        <li class="instagram"><a href="https://www.instagram.com/sammyisra"><i class="fa fa-instagram fa-lg"></i></a></li>
-        <li class="flickr"><a href="https://www.flickr.com/sammy_iy"><i class="fa fa-flickr fa-lg"></i></a></li>
-        <li class="youtube"><a href="#"><i class="fa fa-youtube-square fa-lg"></i></a></li>
-        <li class="linkedin"><a href="https://www.linkedin.com/in/sammyisrawi"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-      </ul>
-    </div>
-    <div class="row twelve columns">
-      <p class="copyright">
-        &copy; 2016 Sammy Israwi Photography. All Rights Reserved.
-      </p>
-    </div>
-  </div>
-</footer>
+  <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="scripts/jquery.magnific-popup.js"></script>
+  <script type="text/javascript">
+  // Initialize popup as usual
+  $('.image-link').magnificPopup({
+  type: 'image',
+  mainClass: 'mfp-with-zoom', // this class is for CSS animation below
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="scripts/jquery.magnific-popup.js"></script>
-<script type="text/javascript">
-// Initialize popup as usual
-$('.image-link').magnificPopup({
-type: 'image',
-mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+  zoom: {
+    enabled: true, // By default it's false, so don't forget to enable it
 
-zoom: {
-  enabled: true, // By default it's false, so don't forget to enable it
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function
 
-  duration: 300, // duration of the effect, in milliseconds
-  easing: 'ease-in-out', // CSS transition easing function
-
-  // The "opener" function should return the element from which popup will be zoomed in
-  // and to which popup will be scaled down
-  // By defailt it looks for an image tag:
-  opener: function(openerElement) {
-    // openerElement is the element on which popup was initialized, in this case its <a> tag
-    // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-    return openerElement.is('img') ? openerElement : openerElement.find('img');
+    // The "opener" function should return the element from which popup will be zoomed in
+    // and to which popup will be scaled down
+    // By defailt it looks for an image tag:
+    opener: function(openerElement) {
+      // openerElement is the element on which popup was initialized, in this case its <a> tag
+      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
   }
-}
 
-});
-</script>
+  });
+  </script>
 </body>
 </html>

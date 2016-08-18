@@ -78,6 +78,10 @@ img {
   max-width: 100%;
 }
 
+img.landscape {
+  max-width: 2150%;
+}
+
 img.avatar {
   border-radius: 400px;
   border: 5px solid white;
